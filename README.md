@@ -14,7 +14,7 @@ The familiar `import mlx.core as mx`, backed by Vulkan compute through Mesa's Ho
 
 My work spans GPU kernels and fusion, quantized inference, numerical validation, model serving, and distribution. The stack includes local chat, memory-aware model admission, approval-gated downloads, and reproducible release wheels. Its private Vulkan driver stays separate from the desktop's Mesa installation.
 
-The speech path combines a Parakeet encoder on the Apple Neural Engine with decoding on the GPU. Hardware coverage and supported execution paths are documented separately rather than hidden behind a generic “Apple silicon supported” claim.
+The speech path combines a Parakeet encoder on the Apple Neural Engine with decoding on the GPU.
 
 ### [mesa](https://github.com/joshuaswarren/mesa) (`honeykrisp-omarchy`) — Honeykrisp Vulkan for Apple GPU compute
 
@@ -32,7 +32,7 @@ The work extends through installation and updates: DKMS, package-owned device-tr
 
 Coreglass connects hardware signals to real model workloads: prefill and decode rates, time to first token, token gaps, energy per token, CPU time, and available GPU/ANE counters. It captures remote machines over SSH, compares engines, tracks regressions, and produces both human-readable visualizations and machine-readable findings.
 
-Measured, modeled, replayed, and synthetic data are labeled separately. Missing telemetry stays visible instead of becoming an invented utilization number.
+Measured, modeled, replayed, and synthetic data are labeled separately.
 
 Related work: [pinned, cross-platform inference benchmarks](https://github.com/joshuaswarren/omarchy-inference-fleet) and [Linux ANE experiments](https://github.com/joshuaswarren/ane-linux-experiments).
 
@@ -46,7 +46,7 @@ Related work: [pinned, cross-platform inference benchmarks](https://github.com/j
 | [Omarchy packages](https://github.com/omacom/omarchy-pkgs/pull/791) | Integration of the MLX runtime, private Vulkan driver, ANE driver, and MIL compiler into an opt-in package set. | Merged |
 | [oMLX runtime observability](https://github.com/jundot/omlx/pull/3003) | Expose the effective DFlash engine and fallback reason rather than only the requested configuration. | Open PR |
 
-**A measured result:** my oMLX ANE compile-cache contribution reduced fresh-process model-load time by **53–66%** in the documented Qwen3.8-27B tests across M1 Max, M2 Max, and M1 Ultra. On the M1 Ultra, a cold cache miss took **65.17 seconds** versus **22.42 seconds** for a warm hit, with identical response text. This is a model-loading result, not a token-throughput claim. [Benchmark details and failure-path tests](https://github.com/jundot/omlx/pull/2975).
+**A measured result:** my oMLX ANE compile-cache contribution reduced fresh-process model-load time by **53–66%** in the documented Qwen3.8-27B tests across M1 Max, M2 Max, and M1 Ultra. On the M1 Ultra, a cold cache miss took **65.17 seconds** versus **22.42 seconds** for a warm hit, with identical response text. [Benchmark details and failure-path tests](https://github.com/jundot/omlx/pull/2975).
 
 ## Apple-platform developer tools
 
@@ -54,11 +54,11 @@ Related work: [pinned, cross-platform inference benchmarks](https://github.com/j
 
 An iOS development workflow from Linux: Swift toolchains, SDK setup, physical-device deployment, debugging, and signing and packaging checks. The documented device workflow builds and installs SwiftUI apps without running Xcode or macOS; it still uses an Apple-supplied SDK.
 
-My related [xtool work](https://github.com/xtool-org/xtool/pulls?q=is%3Apr+author%3Ajoshuaswarren) addresses dependency resolution, dynamic-library linking and embedding, and app-extension packaging. Device-tested workflows, proposed upstream fixes, and distribution limitations are documented separately.
+My related [xtool work](https://github.com/xtool-org/xtool/pulls?q=is%3Apr+author%3Ajoshuaswarren) addresses dependency resolution, dynamic-library linking and embedding, and app-extension packaging.
 
 ### [Allward](https://github.com/joshuaswarren/allward)
 
-A native Mac terminal for coding-agent work across local and remote machines. It combines a custom VT engine and Metal renderer with real PTYs, direct SSH, workspace organization, agent attention routing, and an MCP control surface. It builds and runs on real hardware; it is still a young application.
+A native Mac terminal for coding-agent work across local and remote machines. It combines a custom VT engine and Metal renderer with real PTYs, direct SSH, workspace organization, agent attention routing, and an MCP control surface. It builds and runs on real hardware.
 
 ## Memory and context for user-aware agents
 
@@ -68,7 +68,7 @@ I'm the creator and maintainer of Remnic: open-source, local-first memory and co
 
 Memories remain inspectable Markdown files. Hybrid retrieval, graph recall, provenance, correction, and MCP/HTTP integrations make context useful without locking it inside one vendor's conversation history. Integrations include Claude Code, Codex CLI, OpenClaw, Cursor, Replit, Pi, and OMP.
 
-As of September 2026, Remnic was seeing approximately **one million monthly package downloads across its integrations**. Package downloads are not a count of unique users.
+As of September 2026, Remnic was seeing approximately **one million monthly package downloads across its integrations**.
 
 Remnic also powers **[What Helps Me](https://github.com/joshuaswarren/remnic/blob/main/docs/hackathons/build-for-good-2026.md)**, my first-place project in OpenAI's 2026 Build for Good hackathon: a support passport where the person approves what is shared and can revoke access.
 
@@ -92,7 +92,7 @@ Other Omarchy projects include [Omastorm](https://github.com/joshuaswarren/omast
 
 ### Contributions beyond my own projects
 
-I also contribute fixes and integration work to other maintainers' projects, including [HookEcho](https://github.com/d4vid87/hookecho/pull/322), [Blip](https://github.com/nixfred/blip/pull/49), and [Infinitty](https://github.com/jasonkneen/infinitty-free/pull/7). My forks are working trees for that collaboration, not claims of authorship of the upstream projects.
+I also contribute fixes and integration work to other maintainers' projects, including [HookEcho](https://github.com/d4vid87/hookecho/pull/322), [Blip](https://github.com/nixfred/blip/pull/49), and [Infinitty](https://github.com/jasonkneen/infinitty-free/pull/7).
 
 </details>
 
