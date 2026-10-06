@@ -1,5 +1,7 @@
 # Joshua Warren
 
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink)](https://github.com/sponsors/joshuaswarren)
+
 **Open-source ML systems, on-device inference, and developer tools.**
 
 I build the software between a model and the machine it runs on: GPU backends, accelerator drivers, compilers, inference servers, and the tools that make them usable.
@@ -111,3 +113,11 @@ Today I'm interested in hands-on **ML systems, inference optimization, on-device
 [Website and field notes](https://joshuawarren.com) · [LinkedIn](https://www.linkedin.com/in/joshuawarren/) · [X](https://x.com/joshuaswarren)
 
 <!-- Contribution status reviewed 2026-10-06. Hardware support and open-PR status change; linked repositories and PRs are authoritative. -->
+
+## Support
+
+Every bit of support helps keep joshuaswarren alive and free. If you are able, [sponsor on GitHub](https://github.com/sponsors/joshuaswarren) or send a Lightning donation to `joshuaswarren@strike.me` to directly fund continued development and new integrations.
+
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?style=for-the-badge)](https://github.com/sponsors/joshuaswarren)
+
+If financial support is not an option, you can still make a big difference: [star the repo](https://github.com/joshuaswarren/joshuaswarren), share it, or recommend it to a colleague. Word of mouth is how most people find joshuaswarren.
