@@ -70,7 +70,7 @@ Memories remain inspectable Markdown files. Hybrid retrieval, graph recall, prov
 
 As of September 2026, Remnic was seeing approximately **one million monthly package downloads across its integrations**.
 
-Remnic also powers **[What Helps Me](https://github.com/joshuaswarren/remnic/blob/main/docs/hackathons/build-for-good-2026.md)**, my first-place project in OpenAI's 2026 Build for Good hackathon: a support passport where the person approves what is shared and can revoke access.
+**[Remnic Canvas](https://github.com/joshuaswarren/remnic-canvas)** took first place in OpenAI's 2026 Build for Good hackathon with What Helps Me, a support passport where the person approves what is shared and can revoke access. [How it won](https://joshuawarren.com/blog/what-helps-me-won-openai-build-for-good).
 
 ## More projects and experiments
 
@@ -79,7 +79,7 @@ Remnic also powers **[What Helps Me](https://github.com/joshuaswarren/remnic/blo
 
 ### Agent infrastructure
 
-- [Remnic Canvas](https://github.com/joshuaswarren/remnic-canvas): shared browser-agent memory through WebMCP, with visible approval, correction, and deletion controls.
+- [Remnic Canvas](https://github.com/joshuaswarren/remnic-canvas): shared browser-agent memory through WebMCP (first place, OpenAI Build for Good 2026).
 - [modelctl](https://github.com/joshuaswarren/modelctl): an in-development, provider-neutral control plane for workload contracts, model state, budgets, and bounded agent recovery. The public repository contains generic contracts and synthetic fixtures.
 - [Tower](https://github.com/joshuaswarren/tower): self-hosted agent-fleet monitoring with heartbeats, run-state transitions, stale-state detection, and artifact-linked receipts.
 - [Fleet Shepherd](https://github.com/joshuaswarren/omarchy-fleet-shepherd): a read-only Omarchy panel for local and SSH-connected agent fleets, with partial-failure and stale-data handling.
